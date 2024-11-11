@@ -1,0 +1,54 @@
+[debug] [2024-11-11T23:28:55.638Z] ----------------------------------------------------------------------
+[debug] [2024-11-11T23:28:55.645Z] Command:       /Users/williszhang/.nvm/versions/node/v20.17.0/bin/node /Users/williszhang/.nvm/versions/node/v20.17.0/bin/firebase serve
+[debug] [2024-11-11T23:28:55.646Z] CLI Version:   13.24.2
+[debug] [2024-11-11T23:28:55.646Z] Platform:      darwin
+[debug] [2024-11-11T23:28:55.646Z] Node Version:  v20.17.0
+[debug] [2024-11-11T23:28:55.647Z] Time:          Mon Nov 11 2024 18:28:55 GMT-0500 (Eastern Standard Time)
+[debug] [2024-11-11T23:28:55.647Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-11T23:28:55.864Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-11T23:28:55.864Z] > authorizing via signed-in user (williszhang@sakunchala.altostrat.com)
+[debug] [2024-11-11T23:28:55.865Z] [iam] checking project gemini-med-lit-review for permissions ["firebase.projects.get"]
+[debug] [2024-11-11T23:28:55.866Z] Checked if tokens are valid: false, expires at: 1731365483582
+[debug] [2024-11-11T23:28:55.866Z] Checked if tokens are valid: false, expires at: 1731365483582
+[debug] [2024-11-11T23:28:55.867Z] > refreshing access token with scopes: []
+[debug] [2024-11-11T23:28:55.870Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-11T23:28:55.870Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-11T23:28:56.166Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-11-11T23:28:56.166Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-11T23:28:56.236Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/gemini-med-lit-review:testIamPermissions [none]
+[debug] [2024-11-11T23:28:56.236Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/gemini-med-lit-review:testIamPermissions x-goog-quota-user=projects/gemini-med-lit-review
+[debug] [2024-11-11T23:28:56.236Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gemini-med-lit-review:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-11-11T23:28:56.360Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/gemini-med-lit-review:testIamPermissions 200
+[debug] [2024-11-11T23:28:56.360Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gemini-med-lit-review:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-11-11T23:28:56.360Z] Checked if tokens are valid: true, expires at: 1731371335167
+[debug] [2024-11-11T23:28:56.361Z] Checked if tokens are valid: true, expires at: 1731371335167
+[debug] [2024-11-11T23:28:56.361Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gemini-med-lit-review [none]
+[debug] [2024-11-11T23:28:56.713Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gemini-med-lit-review 200
+[debug] [2024-11-11T23:28:56.713Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gemini-med-lit-review {"projectId":"gemini-med-lit-review","projectNumber":"934163632848","displayName":"gemini-med-lit-review","name":"projects/gemini-med-lit-review","resources":{"hostingSite":"gemini-med-lit-review"},"state":"ACTIVE","etag":"1_45169e25-4d63-481f-ac10-271f916fc67c"}
+[info] 
+[info] === Serving from '/Users/williszhang/Projects/gemini-med-lit-review-firebase'...
+[info] 
+[debug] [2024-11-11T23:28:56.720Z] Checked if tokens are valid: true, expires at: 1731371335167
+[debug] [2024-11-11T23:28:56.720Z] Checked if tokens are valid: true, expires at: 1731371335167
+[debug] [2024-11-11T23:28:56.721Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/gemini-med-lit-review/sites 
+[debug] [2024-11-11T23:28:57.155Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/gemini-med-lit-review/sites 200
+[debug] [2024-11-11T23:28:57.155Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/gemini-med-lit-review/sites {"sites":[{"name":"projects/gemini-med-lit-review/sites/gemini-med-lit-review","defaultUrl":"https://gemini-med-lit-review.web.app","appId":"1:934163632848:web:2a4d6241a851a4962e44d5","type":"DEFAULT_SITE"}]}
+[debug] [2024-11-11T23:28:57.156Z] Checked if tokens are valid: true, expires at: 1731371335167
+[debug] [2024-11-11T23:28:57.156Z] Checked if tokens are valid: true, expires at: 1731371335167
+[debug] [2024-11-11T23:28:57.156Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gemini-med-lit-review/webApps/1:934163632848:web:2a4d6241a851a4962e44d5/config [none]
+[debug] [2024-11-11T23:28:57.574Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gemini-med-lit-review/webApps/1:934163632848:web:2a4d6241a851a4962e44d5/config 200
+[debug] [2024-11-11T23:28:57.575Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gemini-med-lit-review/webApps/1:934163632848:web:2a4d6241a851a4962e44d5/config {"projectId":"gemini-med-lit-review","appId":"1:934163632848:web:2a4d6241a851a4962e44d5","storageBucket":"gemini-med-lit-review.firebasestorage.app","apiKey":"AIzaSyDYJyYfEFUxsFjDuuPwTlGcAJa30F9IIgY","authDomain":"gemini-med-lit-review.firebaseapp.com","messagingSenderId":"934163632848","measurementId":"G-EF892YK8QG"}
+[debug] [2024-11-11T23:28:57.602Z] Checked if tokens are valid: true, expires at: 1731371335167
+[debug] [2024-11-11T23:28:57.602Z] Checked if tokens are valid: true, expires at: 1731371335167
+[debug] [2024-11-11T23:28:57.602Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gemini-med-lit-review [none]
+[debug] [2024-11-11T23:28:57.906Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gemini-med-lit-review 200
+[debug] [2024-11-11T23:28:57.906Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gemini-med-lit-review {"projectId":"gemini-med-lit-review","projectNumber":"934163632848","displayName":"gemini-med-lit-review","name":"projects/gemini-med-lit-review","resources":{"hostingSite":"gemini-med-lit-review"},"state":"ACTIVE","etag":"1_45169e25-4d63-481f-ac10-271f916fc67c"}
+[info] i  hosting[gemini-med-lit-review]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] ✔  hosting[gemini-med-lit-review]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [11/Nov/2024:23:29:04 +0000] "GET / HTTP/1.1" 200 659 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [11/Nov/2024:23:29:04 +0000] \"GET / HTTP/1.1\" 200 659 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [11/Nov/2024:23:29:05 +0000] "GET /static/js/main.aa271e6a.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [11/Nov/2024:23:29:05 +0000] \"GET /static/js/main.aa271e6a.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [11/Nov/2024:23:29:05 +0000] "GET /static/css/main.a206c5d8.css HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [11/Nov/2024:23:29:05 +0000] \"GET /static/css/main.a206c5d8.css HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [11/Nov/2024:23:29:05 +0000] "GET /maxima-logo.png HTTP/1.1" 200 452 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [11/Nov/2024:23:29:05 +0000] \"GET /maxima-logo.png HTTP/1.1\" 200 452 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [11/Nov/2024:23:29:05 +0000] "GET /manifest.json HTTP/1.1" 200 519 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [11/Nov/2024:23:29:05 +0000] \"GET /manifest.json HTTP/1.1\" 200 519 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [11/Nov/2024:23:29:05 +0000] "GET /rit-logo.png HTTP/1.1" 200 177384 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [11/Nov/2024:23:29:05 +0000] \"GET /rit-logo.png HTTP/1.1\" 200 177384 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36\""}}
