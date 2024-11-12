@@ -212,7 +212,8 @@ const useChat = (user, selectedTemplate) => {
             id: createMessageId('error'),
             text: "I'm sorry, there was an error retrieving documents. Please try again.",
             isUser: false,
-            timestamp: new Date()
+            timestamp: new Date(),
+            error: error.message // Add the error message here
           };
           
           messagesForFirestore.push({
